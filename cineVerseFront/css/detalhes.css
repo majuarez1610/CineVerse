@@ -1,0 +1,123 @@
+/* =========================
+    GLOBAL ANIMATIONS
+   ========================= */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+body {
+    margin: 0;
+    background: radial-gradient(circle at top center, #0a192f 0%, #020b1a 60%, #000000 100%);
+    background-attachment: fixed;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    padding: 2em 4%;
+    min-height: 100vh;
+}
+
+/* =========================
+    CONTENEDOR PRINCIPAL
+   ========================= */
+.ficha-descripcion {
+    display: flex;
+    gap: 4em;
+    margin-top: 3em;
+    animation: fadeInUp 0.8s ease-out both;
+}
+
+.ficha img {
+    width: 350px;
+    border-radius: 16px;
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    animation: fadeInUp 1s ease-out both;
+}
+
+.ficha-descripcion div {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+    animation: fadeInUp 1s ease-out both;
+    animation-delay: 0.2s;
+}
+
+/* =========================
+    TEXTOS PREMIUM
+   ========================= */
+h2 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: -0.04em;
+    margin: 0;
+    background: linear-gradient(180deg, #ffffff 0%, #bbbbbb 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+h2::after {
+    content: "";
+    width: 80px;
+    height: 5px;
+    background: #e50914;
+    border-radius: 10px;
+    display: block;
+    margin-top: 15px;
+    box-shadow: 0 0 15px rgba(229, 9, 20, 0.5);
+}
+
+p {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    color: #d1d1d1;
+    max-width: 750px;
+}
+
+/* =========================
+    LISTA DE EPISODIOS
+   ========================= */
+.episodios-lista {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    list-style: none;
+    animation: fadeInUp 1s ease-out both;
+    animation-delay: 0.4s;
+}
+
+.episodios-lista li {
+    background: rgba(255, 255, 255, 0.04);
+    padding: 1em 1.5em;
+    border-radius: 10px;
+    border-left: 4px solid transparent;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.episodios-lista li:hover {
+    background: rgba(255, 255, 255, 0.08);
+    border-left-color: #e50914;
+    transform: translateX(10px);
+}
+
+/* Selector unificado */
+select {
+    font-size: 16px;
+    font-weight: 700;
+    padding: 0.8em 1.5em;
+    background-color: #f8f8f8;
+    color: #1a1a1a;
+    border-radius: 12px;
+    border: none;
+    border-bottom: 4px solid #e50914;
+    cursor: pointer;
+    width: fit-content;
+}
+
+/* Responsive */
+@media screen and (max-width: 900px) {
+    .ficha-descripcion { flex-direction: column; align-items: center; text-align: center; }
+    h2 { font-size: 2.5rem; }
+    .ficha img { width: 100%; max-width: 300px; }
+}

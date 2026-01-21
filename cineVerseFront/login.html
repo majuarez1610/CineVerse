@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cineverse - Login</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet"
+        href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+
+<body>
+
+    <div class="section">
+        <div class="container">
+            <div class="row full-height justify-content-center">
+                <div class="col-12 text-center align-self-center py-5">
+                    <div class="section pb-5 pt-5 pt-sm-2 text-center">
+
+                        <h6 class="mb-0 pb-3">
+                            <span>Iniciar Sesión</span>
+                            <span>Registrarse</span>
+                        </h6>
+
+                        <input class="checkbox" type="checkbox" id="reg-log" />
+                        <label for="reg-log"></label>
+
+                        <div class="card-3d-wrap mx-auto">
+                            <div class="card-3d-wrapper">
+
+                                <!-- ================= LOGIN ================= -->
+                                <div class="card-front">
+                                    <div class="center-wrap">
+                                        <div class="section text-center">
+                                            <h4 class="mb-4 pb-3">Iniciar Sesión</h4>
+
+                                            <form id="login-form">
+                                                <div class="form-group">
+                                                    <input
+                                                        type="email"
+                                                        class="form-style"
+                                                        placeholder="Tu Email"
+                                                        id="login-email-input"
+                                                        autocomplete="off"
+                                                        required>
+                                                    <i class="input-icon uil uil-at"></i>
+                                                </div>
+
+                                                <div class="form-group mt-2">
+                                                    <input
+                                                        type="password"
+                                                        class="form-style"
+                                                        placeholder="Tu Contraseña"
+                                                        id="login-pass-input"
+                                                        autocomplete="off"
+                                                        required>
+                                                    <i class="input-icon uil uil-lock-alt"></i>
+                                                </div>
+
+                                                <button type="submit" class="btn mt-4">
+                                                    Ingresar
+                                                </button>
+                                            </form>
+
+                                            <p class="mb-0 mt-4 text-center">
+                                                <a href="#" class="link">¿Olvidaste tu contraseña?</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- ================= SIGNUP ================= -->
+                                <div class="card-back">
+                                    <div class="center-wrap">
+                                        <div class="section text-center">
+                                            <h4 class="mb-4 pb-3">Registrarse</h4>
+
+                                            <form id="signup-form">
+                                                <div class="form-group">
+                                                    <input
+                                                        type="text"
+                                                        class="form-style"
+                                                        placeholder="Tu Nombre Completo"
+                                                        id="signup-name"
+                                                        autocomplete="off"
+                                                        required>
+                                                    <i class="input-icon uil uil-user"></i>
+                                                </div>
+
+                                                <div class="form-group mt-2">
+                                                    <input
+                                                        type="email"
+                                                        class="form-style"
+                                                        placeholder="Tu Email"
+                                                        id="signup-email"
+                                                        autocomplete="off"
+                                                        required>
+                                                    <i class="input-icon uil uil-at"></i>
+                                                </div>
+
+                                                <div class="form-group mt-2">
+                                                    <input
+                                                        type="password"
+                                                        class="form-style"
+                                                        placeholder="Tu Contraseña"
+                                                        id="signup-pass"
+                                                        autocomplete="off"
+                                                        required>
+                                                    <i class="input-icon uil uil-lock-alt"></i>
+                                                </div>
+
+                                                <button type="submit" class="btn mt-4">
+                                                    Registrarse
+                                                </button>
+                                            </form>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Auth Script -->
+    <script src="./scripts/auth.js"></script>
+
+</body>
+</html>
