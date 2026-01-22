@@ -92,7 +92,7 @@ const auth = new AuthManager();
 
 document.addEventListener('DOMContentLoaded', () => {
 
-    // 🔐 Si ya hay sesión, redirigir
+    // Si ya hay sesión, redirigir
     if (auth.isLoggedIn()) {
         window.location.href = 'index.html';
         return;
